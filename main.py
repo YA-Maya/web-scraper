@@ -3,7 +3,7 @@ import requests
 
 # Set up the API key
 api_key = "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"
-api_url = "https://api.openai.com/v1/engines/gpt-3.5-turbo/completions"
+api_url = "https://api.openai.com/v1/engines/text-davinci-002/completions"
 
 
 headers = {
