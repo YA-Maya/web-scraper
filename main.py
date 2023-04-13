@@ -2,8 +2,9 @@ import openai
 import requests
 
 # Set up the API key
-api_key = "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"
-api_url = "https://api.openai.com/v1/engines/davinci-codex/completions"
+api_key = "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"
+api_url = "https://api.openai.com/v1/engines/gpt-3.5-turbo/completions"
+
 
 headers = {
     "Content-Type": "application/json",
