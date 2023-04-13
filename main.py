@@ -3,7 +3,7 @@ import pyttsx3
 import openai
 
 # Set up the API key
-api_key = "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"
+api_key = "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"
 api_url = "https://api.openai.com/v1/engines/text-davinci-002/completions"
 openai.api_key = api_key
 

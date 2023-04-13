@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Adventure Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Text Adventure Game</h1>
+    <form action="/" method="post">
+        <label for="user_input">Your command:</label>
+        <input type="text" name="user_input" id="user_input" required>
+        <button type="submit">Send</button>
+    </form>
+    {% if user_input and chatbot_response %}
+        <div>
+            <p><strong>You:</strong> {{ user_input }}</p>
+            <p><strong>Narrator:</strong> {{ chatbot_response }}</p>
+        </div>
+    {% endif %}
+</body>
+</html>
