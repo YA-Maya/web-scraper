@@ -37,6 +37,15 @@ function getHardResponse(userText) {
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 
 }
+function getUserInput() {
+        let userInput = document.getElementById("textInput").value;
+        let userHtml = '<p class="userText"><span>' + userInput + '</span></p>';
+        $("#textInput").val("");
+        $("#chatbox").append(userHtml);
+        document.getElementById("chat-bar-bottom").scrollIntoView(true);
+        return userInput;
+}
+    
 
 //Gets the text text from the input box and processes it
 function getResponse() {
